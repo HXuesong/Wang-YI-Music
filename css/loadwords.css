@@ -1,0 +1,28 @@
+
+/* 歌词ul */
+#lyric {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+#lyric>li {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: .4s;
+}
+/* 正在播放的那一句歌词 */
+#lyric .lplaying {
+    color: #31c27c;
+    transition: .4s;
+    font-size:16px;
+}
+/* 歌词显示区显示的提示语(如加载中、无歌词等) */
+.lyric-tip {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}

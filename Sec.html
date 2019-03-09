@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link href="http://s1.music.126.net/style/favicon.ico?v20180823" rel="shortcut icon">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\Sec.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\audio.css">
+
+    <script defer src="js\header.js"></script>
+    <script defer src="js\up_btn.js"></script>
+    <script defer src="js\jquery.min.js"></script>
+    <script defer src="js\Sec.js"></script>
+    <script defer src="js\audio1.js"></script>
+    <script defer src="js\audio2.js"></script>
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header>
+
+        <!-- 内容区域 -->
+        <div class="container">
+
+            <!-- LOGO -->
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+
+            <!-- 导航条 -->
+            <nav>
+                <ul>
+                    <li id="black">发现音乐</li>
+                    <li>我的音乐</li>
+                    <li>朋友</li>
+                    <li>商城</li>
+                    <li>音乐人</li>
+                    <li>下载客户端</li>
+                </ul>
+                <div class="hot"></div>
+            </nav>
+
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" id="search_text" value="音乐/视频/电台/用户">
+                <div class="img_search"></div>
+            </div>
+
+            <!-- 创作者中心 -->
+            <a href="#">
+                <div class="center">创作者中心</div>
+            </a>
+
+            <!-- 登陆选项 -->
+            <div class="logIn">
+                <span class="logIn_p">登录</span>
+                <ul id="logIn">
+                    <li>
+                        手机号登录
+                        <div id="phone"></div>
+                    </li>
+                    <li>
+                        微信登录
+                        <div id="WeChat"></div>
+                    </li>
+                    <li>
+                        QQ登录
+                        <div id="QQ"></div>
+                    </li>
+                    <li>
+                        新浪微博登录
+                        <div id="sina"></div>
+                    </li>
+                    <li>
+                        网易邮箱账号登录
+                        <div id="WangYi"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 登录选项右侧三角 -->
+            <div class="triangle"></div>
+
+        </div>
+
+    </header>
+
+    <!-- 红条带 -->
+    <div class="SecBac"></div>
+
+    <article>
+
+        <div class="box_article">
+
+            <div class="inner_article">
+
+                <div class="inner_part">
+
+                    <!-- 搜索输入框 -->
+                    <div class="input_songs">
+
+                        <!-- 输入 -->
+                        <input type="text" id="input_song">
+                        <!-- 搜索按钮 -->
+                        <span id="search_btn" onclick="myClick3()"></span>
+
+                    </div>
+
+                    <!-- 内容主体 -->
+                    <div class="main">
+
+                        <!-- 导航栏 -->
+                        <ul class="Sec_nav">
+
+                            <li>
+                                <a href="#">
+                                    <em>单曲</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>歌手</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>专辑</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>视频</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>歌词</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>歌单</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>主播电台</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <em>用户</em>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <!-- 搜索返回内容 -->
+                        <div class="song_container">
+                            <div class="box_return"></div>
+                        </div>
+                        
+
+                        <!-- 搜索单曲 -->
+                        <!-- <div class="return_song" >
+
+                            <span class="return_song_start"></span>
+                            <a href="#">小星星</a>
+                            <div class="return_song_icon">
+                                <span class="icon_plus"></span>
+                                <span class="icon_col"></span>
+                                <span class="icon_share"></span>
+                                <span class="icon_down"></span>
+                            </div>
+                            <span class="song_singer">汪苏泷</span>
+                            <span class="song_pic" style:"background"></span>
+
+                        </div> -->
+
+                        <!-- 搜索歌手 -->
+                        <!-- <div class="return_singer">
+                            <img src="" class="singer_pic">
+                            <a href="#"></a>
+                        </div> -->
+
+                        <!-- 搜索专辑 -->
+                        <!-- <div class="Album_littleBox" id="Album_littleBox1">
+                                <img src="" alt="">
+                                <span class="Album_play"></span>
+                                <p class="Album_SongName"></p>
+                                <div class="Album_SingerName">
+                                    <a href="#" id="Album_p"></a>
+                                    <a href="#" id="Album_p"></a>
+                                </div>
+                        </div> -->
+
+                        <!-- 搜索歌单 -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <!-- 网站底部 -->
+    <footer>
+
+        <div class="box_footer">
+
+            <div class="inner_footer">
+
+                <!-- 三行文本 -->
+                <div class="text_footer">
+
+                    <div class="footer_link">
+                        <a href="#" id="footer_p">关于网易</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">客户服务</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">服务条款</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">网站导航</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">意见反馈</a>
+                    </div>
+
+                    <div class="footer_right">
+                        <span class="line">网易公司版权所有©1997-2019</span>
+                        <span class="line">杭州乐读科技有限公司运营:</span>
+                        <a href="#" id="footer_p">浙网文[2018]3506-263号</a>
+                    </div>
+
+                    <div class="footer_contact">
+                        <span class="line">违法和不良信息举报电话：0571-89853516</span>
+                        <span class="line">举报邮箱:</span>
+                        <a href="#" id="footer_p">ncm5990@163.com</a>
+                    </div>
+
+                </div>
+
+                <!-- 四个图标 -->
+                <div class="pic_footer">
+
+                    <img src="img/footer/1.png">
+                    <img src="img/footer/2.png">
+                    <img src="img/footer/3.png">
+                    <img src="img/footer/4.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <div id="up_btn"></div> 
+    
+    <!-- 底部音乐播放器 -->
+
+    <div class="audio-box">
+		<div class="audio-container">
+            
+            <!-- 上一曲、播放暂停、下一曲 -->
+            <div class="audio-select1">
+                <div class="audio-prev"></div>
+                <div class="audio-play"></div>
+                <div class="audio-next"></div>
+            </div>            
+
+            <!-- 歌曲封面 -->
+            <div class="audio-cover"></div>
+
+            <!-- 进度条 -->
+            <div class="audio-body">
+                <h3 class="audio-title">未知歌曲</h3>
+                <div class="audio-backs">
+                    <div class="audio-setbacks">
+                        <!-- 红色进度条 -->
+                        <i class="audio-this-setbacks">
+                            <span class="audio-backs-btn"></span>
+                        </i>
+                        <span class="audio-cache-setbacks"></span>
+                    </div>
+                    <!-- 当前播放时间 -->
+                    <div class="audio-this-time">00:00</div>
+                    <span class="slash">/</span>
+                    <!-- 总播放时长 -->
+                    <div class="audio-count-time">00:00</div>
+                </div>
+            </div>       
+
+            <!-- 右侧按钮区 -->
+            <div class="audio-btn">
+                <div class="audio-select2">
+                    <div class="audio-collecting"></div>
+                    <div class="audio-sharing"></div>
+                    <div class="audio-volume"></div>
+                    <div class="audio-mode"></div>
+                    <div class="audio-menu"></div>
+                </div>
+            
+                <!-- 音量条 -->
+                <div class="audio-set-volume">
+                    <div class="volume-box">
+                        <i><span></span></i>
+                    </div>
+                </div>
+            
+                <!-- 歌曲列表 -->
+            
+                <div class="audio-list">
+                    <div class="audio-list-head">
+                        <p>播放列表</p>
+                        <span class="menu-close">关闭</span>
+                    </div>
+                    <ul class="audio-inline"></ul>
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

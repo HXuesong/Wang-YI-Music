@@ -1,0 +1,388 @@
+
+.log_box_phone,.log_box_WY,.log_box_reg,.log_box_total
+{
+    z-index: 9998;
+    position: absolute;
+    top: 204px;
+    left: 50%;
+    margin-left: -265px;
+    width: 530px;
+    height: 304px;
+    border-radius: 4px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.8);
+    border: none;
+    display: none;
+}
+
+.log_phone,.log_WY,.log_reg,.log_total
+{
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #191919;
+    border-radius: 4px 4px 0 0;
+    background-color: #2d2d2d;
+}
+
+.log_phone_p,.log_WY_p,.log_reg_p,.log_total_p
+{
+    padding-right: 45px;
+    margin: 0;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 18px;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+.log_container
+{
+    padding: 0;
+    border: 1px solid #878787;
+    border-width: 0 1px 1px;
+    border-radius: 0  0 4px 4px;
+    background-color: #fff;
+}
+
+.input_container
+{
+    padding: 30px 0 43px;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.phone_wrap,.WY_wrap,.reg_wrap
+{
+    position: relative;
+    height: 30px;
+    margin: 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.reg_wrap
+{
+    margin-top: 10px;
+}
+
+.current
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 18px 0 5px;
+    border-right: 1px solid #cdcdcd;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.down_triangle
+{
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    width: 7px;
+    height: 4px;
+    background:url('../img/logIn/img.png')  no-repeat 0 0;  
+}
+
+.txtwrap
+{
+    overflow: hidden;
+}
+
+#input_phone,#input_WY,#input_reg,#reg_input_phone
+{
+    width: 206px;
+    padding: 5px 8px 5px;
+    border: none;
+    margin: 0;
+    cursor: text;
+    outline: none;
+}
+
+.input_password,.input_username
+{
+    margin-top: 10px;
+}
+
+#pw,#reg_pw,#reg_username
+{
+    width: 220px;
+    height: 30px;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    cursor: text;
+    outline: none;
+}
+
+.log_else
+{
+    margin-top: 10px;
+}
+
+.log_else label
+{
+    color: #666;
+    cursor: default;
+}
+
+.log_auto
+{
+    margin: 0 12px 0 0;
+    vertical-align: middle;
+}
+
+.log_else a
+{
+    color: #666;
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.log_else a:hover
+{
+    text-decoration: underline;
+}
+
+.log_onclick
+{
+    margin-top: 20px;
+    width: 220px;
+    height: 28px;
+    background-color: #3483cf;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.log_onclick a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px 0 0;
+    line-height: 28px;
+}
+
+.log_onclick:hover
+{
+    background-color: #3484cfdc;
+}
+
+.log_bottom
+{
+    padding: 0 19px;
+    height: 48px;
+    border-top: 1px solid #c6c6c6;
+    border-radius: 0 0 4px 4px;
+    line-height: 48px;
+    background-color: #f7f7f7;
+}
+
+.log_bottom_link1
+{
+    color: #0c72c3;
+    text-decoration: none;
+    float: left;
+}
+
+.log_bottom_link2
+{
+    color: #999;
+    text-decoration: none;
+    float: right;
+}
+
+.closeWindow_phone,.closeWindow_WY,.closeWindow_reg,.closeWindow_total
+{
+    position: absolute;
+    z-index: 20;
+    top: 16px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background:url('../img/logIn/img.png')  no-repeat 0 -4px;    
+}
+
+.reg_phone,.reg_password,.reg_uesrname
+{
+    color: #666;
+}
+
+.reg_password,.reg_uesrname
+{
+    margin-top: 10px;
+}
+
+.reg_phone label,.reg_password label,.reg_uesrname label
+{
+    cursor: default;
+}
+
+.log_total_container
+{
+    height: 266px;
+    padding: 0;
+    border: 1px solid #878787;
+    border-width: 0 1px 1px;
+    border-radius: 0 0 4px 4px;
+    background: #fff;
+}
+
+.log_total_inner
+{
+    padding: 40px 0 39px;
+}
+
+.log_total_left
+{
+    float: left;
+    width: 290px;
+    padding: 0 35px 3px 40px;
+    border-right: 1px dotted #ccc;
+}
+
+.log_total_left_bac
+{
+    height: 107px;
+    width: 203px;
+    background: url('../img/logIn/img.png') no-repeat 0 -180px;
+}
+
+.log_total_phone,.log_total_reg
+{
+    margin-top: 10px;
+    width: 210px;
+    height: 28px;
+    background-color: #3282ce;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;    
+}
+
+.log_total_phone:hover
+{
+    background-color: #4998e2de;    
+}
+
+.log_total_reg
+{
+    border: 1px solid #c3c3c3;
+    background-color: #f0f0f0;
+}
+
+.log_total_reg:hover
+{
+    background-color: #f8f5f5e1;   
+}
+
+.log_total_phone_btn,.log_total_reg_btn
+{
+    width: 219px;
+    text-decoration: none;
+    padding: 0 5px 0 0;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+}
+
+.log_total_phone_btn i,.log_total_reg_btn i
+{
+    width: 184px;
+    color: #fff;
+    padding: 0 15px 0 20px;
+    pointer-events: none;
+    font-style: normal;
+}
+
+.log_total_reg_btn i
+{
+    color: #333;
+}
+
+.log_total_right
+{
+    float: left;
+    padding: 3px 0 3px 39px;
+    margin-top: -40px;
+}
+
+.log_total_right ul
+{
+    padding: 0;
+    margin: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 0;
+}
+
+.log_total_right ul li
+{
+    margin-top: 15px;
+    list-style: none;
+}
+
+.log_total_right ul li a
+{
+    height: 14px;
+    line-height: 38px;
+    text-decoration: none;
+}
+
+.log_total_right ul li a:hover
+{
+    text-decoration: underline;
+}
+
+.log_total_right_WX,.log_total_right_QQ,.log_total_right_WB,.log_total_right_WY
+{
+    margin-right: 14px;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.log_total_right_WX
+{
+    background: url('../img/logIn/img.png') no-repeat 0 -142px;
+}
+
+.log_total_right_QQ
+{
+    background: url('../img/logIn/img.png') no-repeat 0 -66px;    
+}
+
+.log_total_right_WB
+{
+    background: url('../img/logIn/img.png') no-repeat 0 -104px;    
+}
+
+.log_total_right_WY
+{
+    background: url('../img/logIn/img.png') no-repeat 0 -28px;    
+}
+
+/* 
+.img{background:url(../images/img.png)  no-repeat;}
+.下三角{height:4px;width:7px;background-position:0 0;}
+.叉{height:10px;width:10px;background-position:0 -4px;}
+.感叹号{height:14px;width:14px;background-position:0 -14px;}
+.WY{height:38px;width:38px;background-position:0 -28px;}
+.QQ{height:38px;width:38px;background-position:0 -66px;}
+.WB{height:38px;width:38px;background-position:0 -104px;}
+.WX{height:38px;width:38px;background-position:0 -142px;}
+.bc{height:107px;width:203px;background-position:0 -180px;}
+*/

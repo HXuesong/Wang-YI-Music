@@ -1,0 +1,279 @@
+
+.right_part
+{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    display: inline-block;
+}
+
+.right_part1
+{
+    width: 248px;
+    height: 122px;
+    background-image: url('../img/right_part/part1/bac.png');
+    background-position:0 0;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.right_part1_p
+{
+    position: absolute;
+    left: 21px;
+    top: 21px;
+    width: 204px;
+    height: 33px;
+    color: #666;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.right_part1_bac
+{
+    position: absolute;
+    left: 74px;
+    bottom: 16px;
+    width: 100px;
+    height: 30px;
+    background-image: url('../img/right_part/part1/img.png');
+    background-position:0 -30px;
+    cursor: pointer;
+}
+
+.right_part1_bac:hover
+{
+    background-position:0 0;
+}
+
+.cutline
+{
+    width: 250px;
+    height: 0;
+    border: 1px solid #b1b1b1;
+    box-shadow: 0 0 3px #b1b1b1;
+}
+
+.right_part2
+{
+    position: absolute;
+    width: 250px;
+    height: 426px;
+    background-color: #ffffff;
+}
+
+.right_part2_text
+{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 210px;
+    height: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.right_part2_text span
+{
+    float: left;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px; 
+    line-height: 10px;
+}
+
+.right_part2_text a
+{
+    float: right;
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 10px;
+}
+
+.right_part2_text a:hover
+{
+    text-decoration: underline;
+}
+
+
+.right_part2_pic
+{
+    position: absolute;
+    left: 20px;
+    top: 59px;
+    width: 210px;
+    height: 366px;
+}
+
+.right_part2_pic a
+{
+    position: relative;
+    display: inline-block;
+    width: 210px;
+    height: 62px;
+    margin-bottom: 14px;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.right_part2_pic a:hover .right_part2_pic_text
+{
+    background-color: #f4f4f4;
+}
+
+.right_part2_pic_img
+{
+    display: inline-block;
+}
+
+.right_part2_pic_text
+{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 147px;
+    height: 62px;
+    border-top: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.right_part2_pic_text h4
+{
+    position: absolute;
+    left: 13px;
+    top: 12px;
+    color: black;
+    font-size: 14px;
+}
+
+.right_part2_pic_text p
+{
+    position: absolute;
+    left: 13px;
+    bottom: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.right_part3
+{
+    position: absolute;
+    top: 548px;
+    width: 250px;
+    height: 45px;
+    background-color: #ffffff;
+}
+
+.right_part3_inner
+{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 210px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    padding: 0 5px 0 0;
+    font-size: 12px;
+    background-image: url('../img/right_part/part3/bac1.png');
+    cursor: pointer;
+}
+
+.right_part3_inner:hover
+{
+    background-image: url('../img/right_part/part3/bac2.png');
+}
+
+.right_part4
+{
+    position: absolute;
+    top: 593px;
+    width: 250px;
+    height: 796px;
+    /* 324 */
+    background-color: #ffffff;
+}
+
+.right_part4_text
+{
+    position: absolute;
+    top: 33px;
+    left: 20px;
+    width: 210px;
+    height: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.right_part4_text span
+{
+    float: left;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px; 
+    line-height: 10px;
+}
+
+.right_part4_pic
+{
+    position: absolute;
+    left: 20px;
+    top: 74px;
+    width: 204px;
+    height: 240px;
+}
+
+.right_part4_pic_box
+{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.right_part4_pic_box img
+{
+    display: inline-block;
+}
+
+.right_part4_pic_text
+{
+    position: absolute;
+    left: 50px;
+    display: inline-block;
+    width: 162px;
+    height: 40px;
+}
+
+.right_part4_pic_V img
+{
+    display: inline-block;
+}
+
+.right_part4_pic_V span
+{
+    /* position: absolute;
+    top: 4px; */
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.right_part4_pic_V span:hover
+{
+    text-decoration: underline;
+}
+
+.right_part4_pic_text p
+{
+    position: absolute;
+    bottom: 4px;
+    color: #666;
+    font-size: 12px;
+}

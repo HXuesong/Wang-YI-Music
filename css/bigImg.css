@@ -1,0 +1,105 @@
+
+.bigImg{
+    width: 100%;
+    height: 336px;
+    background-color: #fffcf7;
+}
+
+#container
+{
+    width: 1116px;
+    height: 336px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#photos{
+    margin: 0;
+    position: absolute;
+    left: 60px;
+    width: 730px;
+    height: 336px;
+    cursor: pointer;
+}
+
+.pictures{
+    position: absolute;
+    width: 730px;
+    height: 336px;
+    list-style: none;
+}
+
+#arrows{
+    position: absolute;
+    width: 1110px;
+    height: 60px;
+    margin-top: 130px;
+    margin-left: -60px;
+}
+
+.arrow{
+    font-size: 2.5em;
+    background-color: rgb(144,144,144,0);
+    color: #fcfcfc;
+    width: 37px;
+    cursor: pointer;
+}
+
+.arrow:hover
+{
+    background-color: rgb(144,144,144,0.2);
+}
+
+.client-download
+{
+    position: absolute;
+    right: 72px;
+    display: inline-block;
+    width: 254px;
+    height: 336px;
+    background-image: url('../img/bigImg/下载客户端1.png');
+}
+
+.client-download p
+{
+    position: absolute;
+    bottom: 40px;
+    left: 10px; 
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+.download
+{
+    position: absolute;
+    bottom: 68px;
+    left: 20px;
+    width: 215px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.download:hover
+{
+    background-image: url('../img/bigImg/下载客户端2.png');
+}
+
+#buttons{
+    position: relative;
+    width: 1116px;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: -16px;
+    padding: 0 300px;
+    z-index: 2;
+}
+
+.button{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: grey;
+    float: left;
+    margin-right: 18px;
+    cursor: pointer;
+}

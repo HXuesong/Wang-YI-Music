@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link href="http://s1.music.126.net/style/favicon.ico?v20180823" rel="shortcut icon">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css\SecNav.css">
+    <link rel="stylesheet" href="css\bigImg.css">
+    <link rel="stylesheet" href="css\left_part.css">
+    <link rel="stylesheet" href="css\right_part.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="css\log_box.css">
+    <!-- <link rel="stylesheet" href="css\loadwords.css"> -->
+    <link rel="stylesheet" href="css\audio.css">
+
+    <script defer src="js\header.js"></script>
+    <script defer src="js\log_box.js"></script>
+    <script defer src="js\log_in.js"></script>
+    <script defer src="js\log_out.js"></script>
+    <script defer src="js\register.js"></script>
+    <script defer src="js\bigImg.js"></script>
+    <script defer src="js\left_part2.js"></script>
+    <script defer src="js\up_btn.js"></script>
+    <script defer src="js\jquery.min.js"></script>
+    <!-- <script defer src="js\loadwords.js"></script> -->
+    <script defer src="js\audio1.js"></script>
+    <script defer src="js\audio2.js"></script>
+</head>
+
+<body>
+
+    <!-- 登录框 -->
+
+    <div class="log_box_phone">
+
+        <!-- 手机号登录 -->
+        <div class="log_phone">
+
+            <div class="log_phone_p">手机号登录</div>
+
+        </div>
+
+        <!-- 下方容器 -->
+        <div class="log_container">
+
+            <!-- 输入框容器 -->
+            <div class="input_container">
+
+                <!-- 输入手机号 -->
+                <div class="input_phone">
+
+                    <div class="phone_wrap">
+
+                        <a href="#" class="current">
+
+                            <!-- 号码归属地 -->
+                            <span class="code">+86</span>
+                            <!-- 下拉箭头 -->
+                            <span class="down_triangle"></span>
+
+                        </a>
+
+                        <div class="txtwrap">
+
+                            <input type="text" placeholder="请输入手机号" id="input_phone">
+
+                        </div>
+
+                        <!-- 号码归属地选项 -->
+                        <ul class="list_options"></ul>
+
+                    </div>
+
+                </div>
+
+                <!-- 输入密码 -->
+                <div class="input_password">
+
+                    <input type="password" placeholder="请输入密码" id="pw">
+
+                </div>
+
+                <!-- 自动登录、忘记密码 -->
+                <div class="log_else">
+
+                    <label>
+
+                        <input type="checkbox" checked="checked" class="log_auto">
+                        自动登录
+
+                    </label>
+
+                    <a href="#">忘记密码？</a>
+
+                </div>
+
+                <!-- 点击登录 -->
+                <div class="log_onclick">
+
+                    <a href="#" onclick="myClick()">
+                        登 录
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 下方的底部容器 -->
+            <div class="log_bottom">
+
+                <a href="#" class="log_bottom_link1" id="log_bottom_phone_link1">
+                    <&nbsp;&nbsp;其他登录方式</a> <a href="#" class="log_bottom_link2">没有账号？免费注册&nbsp;&nbsp;>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- 关闭窗口 -->
+        <span class="closeWindow_phone"></span>
+
+    </div>
+
+    <!-- 网易邮箱账号登录 -->
+    <div class="log_box_WY">
+        <div class="log_WY">
+            <div class="log_WY_p">网易邮箱账号登录</div>
+        </div>
+        <!-- 下方容器 -->
+        <div class="log_container">
+            <!-- 输入框容器 -->
+            <div class="input_container">
+                <!-- 输入网易账号 -->
+                <div class="input_phone">
+                    <div class="WY_wrap">
+                        <div class="txtwrap">
+                            <input type="text" placeholder="请输入账号" id="input_WY">
+                        </div>
+                    </div>
+                </div>
+                <!-- 输入密码 -->
+                <div class="input_password">
+                    <input type="password" placeholder="请输入密码" id="pw">
+                </div>
+                <!-- 自动登录、忘记密码 -->
+                <div class="log_else">
+                    <label>
+                        <input type="checkbox" checked="checked" class="log_auto">
+                        自动登录
+                    </label>
+                    <a href="#">忘记密码？</a>
+                </div>
+                <!-- 点击登录 -->
+                <div class="log_onclick">
+                    <a href="#">
+                        登 录
+                    </a>
+                </div>
+            </div>
+            <!-- 下方的底部容器 -->
+            <div class="log_bottom">
+                <a href="#" class="log_bottom_link1" id="log_bottom_WY_link1">
+                    <&nbsp;&nbsp;其他登录方式 </a> 
+            </div> 
+        </div> 
+        <!-- 关闭窗口 -->           
+        <span class="closeWindow_WY"></span>
+    </div>
+
+    <!-- 账号注册 -->
+    <div class="log_box_reg">
+        <!-- 手机号注册 -->
+        <div class="log_reg">
+            <div class="log_reg_p">手机号注册</div>
+        </div>
+        <!-- 下方容器 -->
+        <div class="log_container">
+            <!-- 输入框容器 -->
+            <div class="input_container">
+                <div class="reg_phone">
+                    <label>手机号：</label>
+                </div>
+                <!-- 输入手机号 -->
+                <div class="input_reg">
+                    <div class="reg_wrap">
+                        <a href="#" class="current">
+                            <!-- 号码归属地 -->
+                            <span class="code">+86</span>
+                            <!-- 下拉箭头 -->
+                            <span class="down_triangle"></span>
+                        </a>
+
+                        <div class="txtwrap">
+                            <input type="text" placeholder="请输入手机号" id="reg_input_phone">
+                        </div>
+
+                        <!-- 号码归属地选项 -->
+                        <ul class="list_options"></ul>
+                    </div>
+                </div>
+                <div class="reg_password">
+                    <label>密码：</label>
+                </div>            
+
+                <!-- 设置注册密码 -->
+                <div class="input_password">
+                    <input type="password" placeholder="设置登录密码，不少于6位" id="reg_pw">
+                </div>
+
+                <div class="reg_uesrname">
+                    <label>昵称：</label>
+                </div>    
+
+                <!-- 设置注册昵称 -->
+                <div class="input_username">
+                    <input type="text" placeholder="设置昵称" id="reg_username">
+                </div>
+
+                <!-- 确定注册 -->
+                <div class="log_onclick">
+                    <a href="#" id="submit" onclick="myClick2()">
+                        确定注册
+                    </a>
+                </div>
+            </div>
+            <!-- 下方的底部容器 -->
+            <div class="log_bottom">
+                <a href="#" class="log_bottom_link1" id="log_bottom_reg_link1">
+                    <&nbsp;&nbsp;返回登录</a> 
+            </div>
+        </div>
+        <!-- 关闭窗口 -->
+        <span class="closeWindow_reg"></span>
+    </div>
+    
+    <!-- 其他登录方式（全部） -->
+    <div class="log_box_total">
+        <!-- 登录 -->
+        <div class="log_total">
+            <div class="log_total_p">登录</div>
+        </div>
+        <div class="log_total_container">
+            <div class="log_total_box">
+                <div class="log_total_inner">
+                    <div class="log_total_left">
+                        <!-- 背景图 -->
+                        <div class="log_total_left_bac"></div>
+                        <!-- 手机号登录 -->
+                        <div class="log_total_phone">
+                            <a href="#" class="log_total_phone_btn">
+                                <i>手机号登录</i>
+                            </a>
+                        </div>
+                        <!-- 注册 -->
+                        <div class="log_total_reg">
+                            <a href="#" class="log_total_reg_btn">
+                                <i>注 册</i>
+                            </a>                            
+                        </div>
+                    </div>
+                    <!-- 右侧图标区 -->
+                    <div class="log_total_right">
+                        <ul>
+                            <li>
+                                <a href="#" >
+                                    <i class="log_total_right_WX"></i>
+                                    微信登录
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="log_total_right_QQ"></i>
+                                    QQ登录
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="log_total_right_WB"></i>
+                                    微博登录
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="log_total_right_WY"></i>
+                                    网易邮箱账号登录
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 关闭窗口 -->
+        <span class="closeWindow_total"></span>
+    </div>    
+
+
+    <!-- 头部 -->
+    <header>
+
+        <!-- 内容区域 -->
+        <div class="container">
+
+            <!-- LOGO -->
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+
+            <!-- 导航条 -->
+            <nav>
+                <ul>
+                    <li id="black">发现音乐</li>
+                    <li>我的音乐</li>
+                    <li>朋友</li>
+                    <li>商城</li>
+                    <li>音乐人</li>
+                    <li>下载客户端</li>
+                </ul>
+                <div class="hot"></div>
+            </nav>
+
+            <!-- 搜索框 -->
+            <div class="search">
+                <input type="text" id="search_text" value="音乐/视频/电台/用户">
+                <div class="img_search"></div>
+            </div>
+
+            <!-- 创作者中心 -->
+            <a href="#">
+                <div class="center">创作者中心</div>
+            </a>
+
+            <!-- 登陆选项 -->
+            <div class="logIn">
+                <span class="logIn_p">登录</span>
+                <ul id="logIn">
+                    <li>
+                        手机号登录
+                        <div id="phone"></div>
+                    </li>
+                    <li>
+                        微信登录
+                        <div id="WeChat"></div>
+                    </li>
+                    <li>
+                        QQ登录
+                        <div id="QQ"></div>
+                    </li>
+                    <li>
+                        新浪微博登录
+                        <div id="sina"></div>
+                    </li>
+                    <li>
+                        网易邮箱账号登录
+                        <div id="WangYi"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 登录选项右侧三角 -->
+            <div class="triangle"></div>
+
+        </div>
+
+    </header>
+
+    <!-- 副导航栏 -->
+
+    <div class="SecNav">
+
+        <div class="box1">
+            <div class="box2">
+                <span id="red-triangle">推荐</span>
+                <span>排行榜</span>
+                <span>歌单</span>
+                <span>主播电台</span>
+                <span>歌手</span>
+                <span>新碟上架</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 大图轮播 -->
+
+    <div class="bigImg">
+
+        <div id='container'>
+
+            <!-- 轮播图 -->
+            <ul id='photos'>
+
+                <li class='pictures' id='#fffcf7' style='z-index: 2;'><img src='img/bigImg/1.jpg'></li>
+                <li class='pictures' id='#b292a1'><img src='img/bigImg/2.jpg'></li>
+                <li class='pictures' id='#040404'><img src='img/bigImg/3.jpg'></li>
+                <li class='pictures' id='#ffd583'><img src='img/bigImg/4.jpg'></li>
+                <li class='pictures' id='#b3bbd5'><img src='img/bigImg/5.jpg'></li>
+                <li class='pictures' id='#e9eaec'><img src='img/bigImg/6.jpg'></li>
+                <li class='pictures' id='#123d4d'><img src='img/bigImg/7.jpg'></li>
+                <li class='pictures' id='#ffffff'><img src='img/bigImg/8.jpg'></li>
+                <li class='pictures' id='#3b5951'><img src='img/bigImg/9.jpg'></li>
+
+                <!-- 左右翻页 -->
+                <div id='arrows'>
+
+                    <span class='arrow' id="left">
+                        <</span> <span class='arrow' id="right" style='float: right;'>>
+                    </span>
+
+                </div>
+
+            </ul>
+
+            <!-- 下载客户端 -->
+            <div class="client-download">
+                <div class="download"></div>
+                <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+            </div>
+
+        </div>
+
+        <!-- 底部圆点 -->
+        <div id='buttons'>
+
+            <span class='button' style='background-color: red;'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+            <span class='button'></span>
+
+        </div>
+
+    </div>
+
+    <!-- 网站正文 -->
+
+    <article>
+
+        <div class="box_article">
+
+            <div class="inner_article">
+
+                <!-- 左侧边栏 -->
+                <div class="left_part">
+
+                    <!-- 热门推荐 -->
+                    <div class="left_part1">
+
+                        <!-- 热门推荐顶部底框 -->
+                        <div class="left_part1_bor">
+
+                            <span class="red_dot"></span>
+                            <a href="#" class="left_part1_bor_p">热门推荐</a>
+
+                            <div class="left_part1_link">
+                                <a href="#" id="left_part1_p">华语</a>
+                                <span class="line">|</span>
+                                <a href="#" id="left_part1_p">流行</a>
+                                <span class="line">|</span>
+                                <a href="#" id="left_part1_p">摇滚</a>
+                                <span class="line">|</span>
+                                <a href="#" id="left_part1_p">民谣</a>
+                                <span class="line">|</span>
+                                <a href="#" id="left_part1_p">电子</a>
+                            </div>
+
+                            <a href="#" class="more">更多</a>
+                            <span class="red_arrow"></span>
+
+                        </div>
+
+                        <!-- 图片 -->
+                        <div class="left_part1_pic">
+
+                            <!-- 上区域 -->
+                            <div class="up-down">
+
+                                <!-- 图片框1/8 -->
+                                <div class="little_pic1">
+
+                                    <div class="play">
+
+                                        <!-- 耳机 -->
+                                        <span class="earphone"></span>
+
+                                        <!-- 播放量 -->
+                                        <p>37575万</p>
+
+                                        <!-- 播放 -->
+                                        <span class="play_pic"></span>
+
+                                    </div>
+                                    <!-- 下方播放栏 -->
+
+
+                                    <!-- 底部文字（华语速爆新歌） -->
+                                    <p class="part1_below_p">华语速爆新歌</p>
+
+                                </div>
+
+                                <div class="little_pic2">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>107万</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p">小时候词不达意，长大后言不由衷</p>
+                                </div>
+
+                                <div class="little_pic3">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>160万</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p">啊！我隐隐听到了土拨鼠尖叫</p>
+                                </div>
+
+                                <div class="little_pic4">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>5294</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p">扛得住，世界都是你的</p>
+                                </div>
+
+                            </div>
+
+                            <!-- 下区域（布局如上区域） -->
+                            <div class="up-down">
+
+                                <div class="little_pic5">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>340万</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p">放假了，开启养猪模式</p>
+                                </div>
+
+                                <div class="little_pic6">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>2119</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p">姜sir夜读：第十三章 你相信有仙子吗（上）</p>
+                                </div>
+
+                                <div class="little_pic7">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>960万</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p">高级感vlog纯音乐BGM</p>
+                                </div>
+
+                                <div class="little_pic8">
+                                    <div class="play">
+                                        <span class="earphone"></span>
+                                        <p>389万</p>
+                                        <span class="play_pic"></span>
+                                    </div>
+                                    <p class="part1_below_p" id="_radio">
+                                        <span></span>
+                                        2018好嗨哦
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 新碟上架 -->
+                    <div class="left_part2">
+
+                        <!-- 新碟上架顶部底框 -->
+                        <div class="left_part2_bor">
+
+                            <span class="red_dot"></span>
+                            <a href="#" class="left_part2_bor_p">新碟上架</a>
+
+                            <a href="#" class="more">更多</a>
+                            <span class="red_arrow"></span>
+
+                        </div>
+
+                        <!-- 图片 -->
+
+                        <!-- 大边框 -->
+                        <div class="left_part2_pic">
+
+                            <!-- 长条 -->
+                            <div class="left_part2_box">
+
+                                <!-- 竖形 -->
+                                <div class="left_part2_littleBox" id="left_part2_littleBox1">
+
+                                    <!-- 专辑图片 -->
+                                    <img src="img/left_part/part2/1.jpg" alt="">
+                                    <!-- 播放图标 -->
+                                    <span class="left_part2_play"></span>
+                                    <!-- 歌名 -->
+                                    <p class="SongName">i'm so tired</p>
+                                    <!-- 歌手 -->
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">Lauv</a>
+                                        <span class="line">/</span>
+                                        <a href="#" id="left_part2_p">Troye Siv</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/2.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">PAPARAZZI(Eng...</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">RADWIMPS</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/3.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">HELLO</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">Loco</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/4.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">DNA</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">Backstreet Boys</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/5.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">雪の華15周年記</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">中島美嘉</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/6.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">thank u, next</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">Ariana Grande</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/7.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">2019年中央广播</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">群星</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/8.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">Blossoms</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">Far East Movem</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/9.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">离家最近的路</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">花粥</a>
+                                        <span class="line">/</span>
+                                        <a href="#" id="left_part2_p">陈鸿宇</a>
+                                    </div>
+                                </div>
+
+                                <div class="left_part2_littleBox">
+                                    <img src="img/left_part/part2/10.jpg" alt="">
+                                    <span class="left_part2_play"></span>
+                                    <p class="SongName">起风了</p>
+                                    <div class="SingerName">
+                                        <a href="#" id="left_part2_p">吴青峰</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 榜单 -->
+                    <div class="left_part3">
+
+                        <!-- 榜单顶部底框 -->
+                        <div class="left_part3_bor">
+
+                            <span class="red_dot"></span>
+                            <a href="#" class="left_part3_bor_p">榜单</a>
+
+                            <a href="#" class="more">更多</a>
+                            <span class="red_arrow"></span>
+
+                        </div>
+
+                        <!-- 下方正文 -->
+                        <div class="left_part3_pic">
+
+                            <div class="left_part3_container">
+
+                                <!-- 1/3 -->
+                                <div class="left_part3_box">
+
+                                    <!-- 专辑图片栏 -->
+                                    <div class="part3_album">
+
+                                        <!-- 图片 -->
+                                        <img src="img/left_part/part3/飙升榜.jpg" alt="">
+
+                                        <div class="album_box">
+
+                                            <!-- 文字 -->
+                                            <div class="album_box_p">云音乐飙升榜</div>
+
+                                            <!-- 图标 -->
+                                            <div class="album_box_icon">
+
+                                                <!-- 播放 -->
+                                                <span class="album_box_icon_play"></span>
+                                                <!-- 收藏 -->
+                                                <span class="album_box_icon_collection"></span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 排行榜 -->
+                                    <div class="part3_list">
+
+                                        <div class="part3_list_color1">
+
+                                            <!-- 排序 -->
+                                            <span class="part3_list_num">1</span>
+                                            <!-- 歌名 -->
+                                            <a href="#" class="part3_list_p">出山</a>
+
+                                            <!-- 图标 -->
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">2</span>
+                                            <a href="#" class="part3_list_p">阿房宫赋</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">3</span>
+                                            <a href="#" class="part3_list_p">GA GA</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">4</span>
+                                            <a href="#" class="part3_list_p">迫降</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">5</span>
+                                            <a href="#" class="part3_list_p">浪漫星球</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">6</span>
+                                            <a href="#" class="part3_list_p">心跳的证明</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">7</span>
+                                            <a href="#" class="part3_list_p">Make it count</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">8</span>
+                                            <a href="#" class="part3_list_p">熬夜成瘾</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">9</span>
+                                            <a href="#" class="part3_list_p">艺术家</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">10</span>
+                                            <a href="#" class="part3_list_p">CLOCK</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 查看全部 -->
+                                    <div class="part3_total">
+                                        <a href="#">查看全部></a>
+                                    </div>
+
+                                </div>
+
+                                <!-- 二 -->
+                                <div class="left_part3_box">
+
+                                    <!-- 专辑图片栏 -->
+                                    <div class="part3_album">
+
+                                        <!-- 图片 -->
+                                        <img src="img/left_part/part3/新歌榜.jpg" alt="">
+
+                                        <div class="album_box">
+
+                                            <!-- 文字 -->
+                                            <div class="album_box_p">云音乐新歌榜</div>
+
+                                            <!-- 图标 -->
+                                            <div class="album_box_icon">
+
+                                                <!-- 播放 -->
+                                                <span class="album_box_icon_play"></span>
+                                                <!-- 收藏 -->
+                                                <span class="album_box_icon_collection"></span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 排行榜 -->
+                                    <div class="part3_list">
+
+                                        <div class="part3_list_color1">
+
+                                            <!-- 排序 -->
+                                            <span class="part3_list_num">1</span>
+                                            <!-- 歌名 -->
+                                            <a href="#" class="part3_list_p">形容</a>
+
+                                            <!-- 图标 -->
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">2</span>
+                                            <a href="#" class="part3_list_p">去流浪</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">3</span>
+                                            <a href="#" class="part3_list_p">奉献</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">4</span>
+                                            <a href="#" class="part3_list_p">Who Do You Love</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">5</span>
+                                            <a href="#" class="part3_list_p">带着地球去流浪</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">6</span>
+                                            <a href="#" class="part3_list_p">我曾</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">7</span>
+                                            <a href="#" class="part3_list_p">你的酒馆对我打烊</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">8</span>
+                                            <a href="#" class="part3_list_p">一半人生</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">9</span>
+                                            <a href="#" class="part3_list_p">浮白</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">10</span>
+                                            <a href="#" class="part3_list_p">九万字</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 查看全部 -->
+                                    <div class="part3_total">
+                                        <a href="#">查看全部></a>
+                                    </div>
+
+                                </div>
+
+                                <!-- 三                                 -->
+                                <div class="left_part3_box">
+
+                                    <!-- 专辑图片栏 -->
+                                    <div class="part3_album">
+
+                                        <!-- 图片 -->
+                                        <img src="img/left_part/part3//原创榜.jpg" alt="">
+
+                                        <div class="album_box">
+
+                                            <!-- 文字 -->
+                                            <div class="album_box_p">网易原创歌曲榜</div>
+
+                                            <!-- 图标 -->
+                                            <div class="album_box_icon">
+
+                                                <!-- 播放 -->
+                                                <span class="album_box_icon_play"></span>
+                                                <!-- 收藏 -->
+                                                <span class="album_box_icon_collection"></span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 排行榜 -->
+                                    <div class="part3_list">
+
+                                        <div class="part3_list_color1">
+
+                                            <!-- 排序 -->
+                                            <span class="part3_list_num">1</span>
+                                            <!-- 歌名 -->
+                                            <a href="#" class="part3_list_p">形容</a>
+
+                                            <!-- 图标 -->
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">2</span>
+                                            <a href="#" class="part3_list_p">那些失眠的夜</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">3</span>
+                                            <a href="#" class="part3_list_p">浮白</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">4</span>
+                                            <a href="#" class="part3_list_p">去年</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">5</span>
+                                            <a href="#" class="part3_list_p">baby no hurry</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">6</span>
+                                            <a href="#" class="part3_list_p">我曾</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">7</span>
+                                            <a href="#" class="part3_list_p">最特别的爱都给你</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">8</span>
+                                            <a href="#" class="part3_list_p">Bodhicitta</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color1">
+                                            <span class="part3_list_num">9</span>
+                                            <a href="#" class="part3_list_p">现实状态</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="part3_list_color2">
+                                            <span class="part3_list_num">10</span>
+                                            <a href="#" class="part3_list_p">去年烟花特别多</a>
+                                            <span class="box_icon">
+                                                <span class="little_play"></span>
+                                                <span class="little_plus"></span>
+                                                <span class="little_collection"></span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 查看全部 -->
+                                    <div class="part3_total">
+                                        <a href="#">查看全部></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 右侧边栏 -->
+                <div class="right_part">
+
+                    <!-- 用户登录 -->
+                    <div class="right_part1">
+
+                        <div class="right_part1_p">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</div>
+                        <div class="right_part1_bac"></div>
+
+                    </div>
+
+                    <!-- 分割线 -->
+                    <div class="cutline"></div>
+
+                    <!-- 入驻歌手 -->
+                    <div class="right_part2">
+
+                        <div class="right_part2_text">
+
+                            <span>入驻歌手</span>
+                            <a href="#">查看全部></a>
+
+                        </div>
+
+                        <div class="right_part2_pic">
+
+                            <a href="#">
+                                <div class="right_part2_pic_img">
+                                    <img src="img/right_part/part2/1.png">
+                                </div>
+                                <div class="right_part2_pic_text">
+                                    <h4>张惠妹aMEI</h4>
+                                    <p>台湾歌手张惠妹</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="right_part2_pic_img">
+                                    <img src="img/right_part/part2/2.png">
+                                </div>
+                                <div class="right_part2_pic_text">
+                                    <h4>Fine乐团</h4>
+                                    <p>独立音乐人</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="right_part2_pic_img">
+                                    <img src="img/right_part/part2/3.png">
+                                </div>
+                                <div class="right_part2_pic_text">
+                                    <h4>萬曉利</h4>
+                                    <p>民谣歌手</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="right_part2_pic_img">
+                                    <img src="img/right_part/part2/4.png">
+                                </div>
+                                <div class="right_part2_pic_text">
+                                    <h4>音乐人赵雷</h4>
+                                    <p>民谣歌手</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="right_part2_pic_img">
+                                    <img src="img/right_part/part2/5.png">
+                                </div>
+                                <div class="right_part2_pic_text">
+                                    <h4>王三溥</h4>
+                                    <p>音乐人</p>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 申请成为网易音乐人 -->
+                    <div class="right_part3">
+
+                        <div class="right_part3_inner">
+                            申请成为网易音乐人
+                        </div>
+
+                    </div>
+
+                    <!-- 热门主播 -->
+                    <div class="right_part4">
+
+                        <div class="right_part4_text">
+
+                            <span>热门主播</span>
+
+                        </div>
+
+                        <div class="right_part4_pic">
+
+                            <div class="right_part4_pic_box">
+
+                                <a href="#">
+                                    <img src="img/right_part/part4/1.jpg" alt="">
+                                </a>
+
+                                <div class="right_part4_pic_text">
+
+                                    <!-- V字图标 -->
+                                    <div class="right_part4_pic_V">
+                                        <span>陈立</span>
+                                        <img src="img/right_part/part4/V.png" alt="">
+                                    </div>
+                                    <p>心理学家、美食家陈立教授</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="right_part4_pic_box">
+                                <a href="#">
+                                    <img src="img/right_part/part4/2.jpg" alt="">
+                                </a>
+                                <div class="right_part4_pic_text">
+                                    <div class="right_part4_pic_V">
+                                        <span>DJ艳秋</span>
+                                        <img src="img/right_part/part4/V.png" alt="">
+                                    </div>
+                                    <p>著名音乐节目主持人</p>
+                                </div>
+                            </div>
+
+                            <div class="right_part4_pic_box">
+                                <a href="#">
+                                    <img src="img/right_part/part4/3.jpg" alt="">
+                                </a>
+                                <div class="right_part4_pic_text">
+                                    <div class="right_part4_pic_V">
+                                        <span>国家大剧院古典音乐频道</span>
+                                        <img src="img/right_part/part4/V.png" alt="">
+                                    </div>
+                                    <p>国家大剧院古典音乐官方</p>
+                                </div>
+                            </div>
+
+                            <div class="right_part4_pic_box">
+                                <a href="#">
+                                    <img src="img/right_part/part4/4.jpg" alt="">
+                                </a>
+                                <div class="right_part4_pic_text">
+                                    <div class="right_part4_pic_V">
+                                        <span>谢谢收听</span>
+                                        <img src="img/right_part/part4/V.png" alt="">
+                                    </div>
+                                    <p>南京电台主持人王馨</p>
+                                </div>
+                            </div>
+
+                            <div class="right_part4_pic_box">
+                                <a href="#">
+                                    <img src="img/right_part/part4/5.jpg" alt="">
+                                </a>
+                                <div class="right_part4_pic_text">
+                                    <div class="right_part4_pic_V">
+                                        <span>DJ晓苏</span>
+                                        <img src="img/right_part/part4/V.png" alt="">
+                                    </div>
+                                    <p>独立DJ，CRI环球旅游广播</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+    <!--滚动歌词-->
+    <!-- <div class="lyric">
+        <ul id="lyric">
+            <li class='lyric-tip'>网易云音乐</li>
+        </ul>
+    </div> -->
+
+    <!-- 网站底部 -->
+    <footer>
+
+        <div class="box_footer">
+
+            <div class="inner_footer">
+
+                <!-- 三行文本 -->
+                <div class="text_footer">
+
+                    <div class="footer_link">
+                        <a href="#" id="footer_p">关于网易</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">客户服务</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">服务条款</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">网站导航</a>
+                        <span class="line">|</span>
+                        <a href="#" id="footer_p">意见反馈</a>
+                    </div>
+
+                    <div class="footer_right">
+                        <span class="line">网易公司版权所有©1997-2019</span>
+                        <span class="line">杭州乐读科技有限公司运营:</span>
+                        <a href="#" id="footer_p">浙网文[2018]3506-263号</a>
+                    </div>
+
+                    <div class="footer_contact">
+                        <span class="line">违法和不良信息举报电话：0571-89853516</span>
+                        <span class="line">举报邮箱:</span>
+                        <a href="#" id="footer_p">ncm5990@163.com</a>
+                    </div>
+
+                </div>
+
+                <!-- 四个图标 -->
+                <div class="pic_footer">
+
+                    <img src="img/footer/1.png">
+                    <img src="img/footer/2.png">
+                    <img src="img/footer/3.png">
+                    <img src="img/footer/4.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <div id="up_btn"></div> 
+    
+    <!-- 底部音乐播放器 -->
+
+    <div class="audio-box">
+		<div class="audio-container">
+            
+            <!-- 上一曲、播放暂停、下一曲 -->
+            <div class="audio-select1">
+                <div class="audio-prev"></div>
+                <div class="audio-play"></div>
+                <div class="audio-next"></div>
+            </div>            
+
+            <!-- 歌曲封面 -->
+            <div class="audio-cover"></div>
+
+            <!-- 进度条 -->
+            <div class="audio-body">
+                <h3 class="audio-title">未知歌曲</h3>
+                <div class="audio-backs">
+                    <div class="audio-setbacks">
+                        <!-- 红色进度条 -->
+                        <i class="audio-this-setbacks">
+                            <span class="audio-backs-btn"></span>
+                        </i>
+                        <span class="audio-cache-setbacks"></span>
+                    </div>
+                    <!-- 当前播放时间 -->
+                    <div class="audio-this-time">00:00</div>
+                    <span class="slash">/</span>
+                    <!-- 总播放时长 -->
+                    <div class="audio-count-time">00:00</div>
+                </div>
+            </div>       
+
+            <!-- 右侧按钮区 -->
+            <div class="audio-btn">
+                <div class="audio-select2">
+                    <div class="audio-collecting"></div>
+                    <div class="audio-sharing"></div>
+                    <div class="audio-volume"></div>
+                    <div class="audio-mode"></div>
+                    <div class="audio-menu"></div>
+                </div>
+            
+                <!-- 音量条 -->
+                <div class="audio-set-volume">
+                    <div class="volume-box">
+                        <i><span></span></i>
+                    </div>
+                </div>
+            
+                <!-- 歌曲列表 -->
+            
+                <div class="audio-list">
+                    <div class="audio-list-head">
+                        <p>播放列表</p>
+                        <span class="menu-close">关闭</span>
+                    </div>
+                    <ul class="audio-inline"></ul>
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+
+header
+{
+    width: 100%;
+    height: 70px;
+    background-color: #242424;
+    border-bottom: 1px solid #000000;
+}
+
+.container
+{
+    position: relative;
+    height: 70px;
+    width: 1116px;
+    margin: 0 auto;
+}
+
+.container .logo
+{
+    position: absolute;
+    height: 33px;
+    width: 157px;
+    background-position: 0 -96px;
+    background-image: url('../img/header/img-header.png');
+    top: 50%;
+    margin-top: -16.5px; 
+}
+
+nav
+{
+    position: absolute;
+    width: 580px;
+    height: 70px;
+    left: 177px;
+    letter-spacing: -8px;
+}
+
+ul
+{
+    float: left;
+}
+
+nav li
+{
+    display: inline-block;
+    color: #ccc;
+    line-height: 70px;
+    font-size: 14px;
+    padding: 0 20px;
+    cursor: pointer;
+    letter-spacing: normal;
+}
+
+#black, nav li:hover
+{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+nav .hot
+{
+    height: 13px; 
+    width: 26px;
+    background-image: url('../img/header/img-header.png');
+    background-position:0 -83px;
+    display: inline-block;
+    margin-left: -11px;
+    margin-top: 23px;
+}
+
+.search
+{
+    position: absolute;
+    width: 158px;
+    left: 770px;
+    top: 50%;
+    margin-top: -16px;
+}
+
+.search #search_text
+{   
+    outline: none;
+    width: 158px;
+    background: #ffffff;
+    border: 1px solid #242424;
+    border-radius: 16px;
+    padding: 8px 8px 8px 16px;
+    display: inline-block;
+    color: #9b9b9b;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search .img_search
+{
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-image: url('../img/header/img-header.png');
+    background-position: 0 -43px;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+}
+
+.center
+{
+    position: absolute;
+    width: 90px;
+    background: #242424;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px;
+    padding: 8px 2px;
+    display: inline-block;
+    color: #ccc;
+    text-align: center;
+    font-size: 12px;
+    right: 86px;
+    top: 50%;
+    margin-top: -16.5px;
+}
+
+.center:hover
+{
+    border-color: #cccccc;
+    color: #e8e8e8;
+}
+
+.logIn
+{
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    font-size: 12px;
+    color: #787878;
+    right: 42px;
+    top: 50%;
+    margin-top: -6px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.logIn_p
+{
+    color: #787878;
+}
+
+.logIn_p:hover
+{
+    text-decoration: underline;
+    color: #787878;
+}
+
+#logIn
+{
+    position: absolute;
+    width: 160px;
+    top: 26px;
+    left: -60px;
+    display: none;
+}
+
+#logIn::before
+{
+    position: absolute;
+    content: ' ';
+    border-top: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid #2b2b2b;
+    border-right: 6px solid transparent;
+    top: -12px;
+    left: 70px;
+}
+
+/* .logIn:hover ul
+{
+    position: relative;
+    display: block;
+} */
+
+/* .triangle:hover+.logIn
+{
+    color: #a5a1a1;
+    text-decoration: underline;
+} */
+
+.logIn ul li
+{
+    width: 160px;
+    height: 38px;
+    border: 1px solid #232323;
+    border-top: none;
+    background-color: #2b2b2b;
+    list-style: none;
+    color: #cccccc;
+    text-align: left;
+    text-indent: 30%;
+    line-height: 38px;
+}
+
+.logIn ul li:hover
+{
+    background-color: #353535;
+}
+
+#phone
+{
+    position: absolute;
+    background-image: url('../img/header/img-header.png');
+    height: 14px;
+    width: 10px;
+    background-position: 0 0;
+    display: inline-block;
+    left: 20px;
+    top: 10px;
+}
+
+#WeChat
+{
+    position: absolute;
+    background-image: url('../img/header/img-header.png');
+    height: 13px;
+    width: 16px;
+    background-position: 0 -69px;
+    display: inline-block;
+    left: 20px;
+    top: 48px;
+}
+
+#QQ
+{
+    position: absolute;
+    background-image: url('../img/header/img-header.png');
+    height: 14px;
+    width: 12px;
+    background-position: 0 -14px;
+    display: inline-block;
+    left: 20px;
+    top: 86px;
+}
+
+#sina
+{
+    position: absolute;
+    background-image: url('../img/header/img-header.png');
+    height: 12px;
+    width: 16px;
+    background-position: 0 -58px;
+    display: inline-block;
+    left: 20px;
+    top: 124px;
+}
+
+#WangYi
+{
+    position: absolute;
+    background-image: url('../img/header/img-header.png');
+    height: 14px;
+    width: 12px;
+    background-position: 0 -28px;
+    display: inline-block;
+    left: 20px;
+    top: 162px;
+}
+
+.triangle
+{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 6px solid #3e3e3e;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid transparent;
+    right: 20px;
+    top: 50%;
+}
+
+
+
+
